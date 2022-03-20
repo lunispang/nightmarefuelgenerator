@@ -17,7 +17,7 @@ void draw(){
       float g=green(pix);
       float b=blue(pix);
       
-      fin=color(r-g,g-b,b-r);
+      fin=color((r-g)*2,(g-b)*2,(b-r)*2);
       image.pixels[index]=fin;
     }
   }
